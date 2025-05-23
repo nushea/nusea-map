@@ -10,6 +10,7 @@ body {
     font-family: 'FavFont', sans-serif;
 
     display: flex;
+    flex-direction: row;
 
     width: 100%;
     height: 100%;
@@ -18,28 +19,35 @@ body {
 
 
 #Left {
-    flex: none;
-//    background-color: rgb(17, 17, 27);
+    background-color: rgb(17, 17, 27);
 	background-color: #00FF00;
+
+	display: flex;
+    flex: none;
 	
-    height: 100%;
+    height: 100vh;
     width: 50vh;
 }
 
+#Left>ul {
+    flex-direction: column;
+    justify-content: end;
+}
+
 #Middle {
-    flex: none;
     background-color: #FF0000;
 	
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	flex: 1 1 auto;
-    height: 100%;
 }
 
 #Right {
-    flex: none;
-//    background-color: #161624;
+    background-color: #161624;
 	background-color: #0000FF;
-    height: 100%;
+	display: flex;
+    flex: none;
+    height: 100vh;
     width: 33vh;
 }
