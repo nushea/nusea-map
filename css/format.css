@@ -43,6 +43,7 @@ a:visited {
 }
 
 iframe {
+
 	width: 90%;
 	height: 90%;
 	border: none;
@@ -103,9 +104,15 @@ iframe {
 }
 #Lower {
 	height: 100%;
+	width: 100%;
+	display:flex;
+	justify-content: center;
 }
 #Lower>p {
 	text-align: justify;
+}
+#ItemText {
+	font-size: 16px;
 }
 #metaMap {
 	width: 40vw;
