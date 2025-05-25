@@ -6,7 +6,7 @@
 body {
     background-color: #1e1e2e;
     color: rgb(204,214,244);
-    font-size: 24px;
+    font-size: 2vw;
     font-family: 'FavFont', sans-serif;
 
     width: 100%;
@@ -15,10 +15,7 @@ body {
 	padding: 0;
 }
 #Items {
-
     display: flex;
-    flex-direction: row;
-
 }
 ul {
 	list-style-type: none;
@@ -59,10 +56,6 @@ iframe {
     width: 12vw;
 }
 
-#Left>ul {
-    flex-direction: column;
-    justify-content: top;
-}
 .LeftImage {
 	width: 5vw;
 }
@@ -77,34 +70,27 @@ iframe {
 #Middle>ul {
 	width: 100%;
 }
-#Upper>img {
-	z-index: 100;
-	position: sticky;
-}
 
 
 #Right {
     background-color: #161624;
 	display: flex;
     flex: none;
-    height: 100vh;
     width: 12vw;
 }
 #Right>ul {
-	flex-direction: column;
 	justify-content: end;
 }
 
 #Upper {
+	position: relative;
 	text-align: center;
 	height: 50vh;
-	margin: 0;
+	font-size: 38px;
 }
-#Upper>p {
-}
+
 #Lower {
 	height: 100%;
-	width: 100%;
 	display:flex;
 	justify-content: center;
 }
@@ -112,7 +98,7 @@ iframe {
 	text-align: justify;
 }
 #ItemText {
-	font-size: 16px;
+	font-size: 5.5vh;
 }
 #metaMap {
 	width: 40vw;
