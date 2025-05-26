@@ -79,7 +79,7 @@ iframe {
     width: 12vw;
 }
 #Right>ul {
-	justify-content: end;
+	justify-content: space-between;
 }
 
 #Upper {
