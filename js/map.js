@@ -82,7 +82,7 @@ canvas.onclick = function(event) {
 	ctx.putImageData(map, 0, 0);
 
 	var color = ctx.getImageData(mouseX, mouseY, 1, 1).data;
-	console.log(color);
+//	console.log(color);
 	if(color[3] > 100)
 		fillall(color, [(color[0])/6, (color[1])/6, (color[2])/6, 255]);
 	replaceText(color);
