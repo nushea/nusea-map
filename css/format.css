@@ -114,7 +114,7 @@ iframe {
 @media (orientation: portrait) {
     #Items {
         flex-direction: column;
-		height: 100lvh;
+		height: 100dvh;
     }
 
     #Left {
