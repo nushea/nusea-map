@@ -86,7 +86,7 @@ iframe {
 	position: relative;
 	text-align: center;
 	height: 50vh;
-	font-size: 38px;
+	font-size: 3vw;
 }
 
 #Lower {
@@ -98,8 +98,8 @@ iframe {
 	text-align: justify;
 }
 #ItemText {
-	font-size: 5.5vh;
+	font-size: 1.8vw;
 }
 #metaMap {
-	width: 40vw;
+	height: 50vh;
 }
