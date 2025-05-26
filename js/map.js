@@ -33,36 +33,45 @@ function fillall(oldCol, newCol) {
 	ctx.putImageData(imageData, 0, 0);
 }
 
+function replaceIFrame(newSrc){
+	const parentNode = document.getElementById("Lower");
+	const oldIframe = frame;
+	const newIframe = oldIframe.cloneNode();
+	newIframe.src = newSrc;
+	parentNode.replaceChild(newIframe, oldIframe);
+	frame = newIframe;
+}
+
 function replaceText(color){	
 					//HaRe
-		 if (color[0] === 218 && color[1] ===  91 && color[2] ===  96) frame.src = "/text/HaYi.html";
-	else if (color[0] === 197 && color[1] ===  98 && color[2] === 162) frame.src = "/text/HaMnq.html";
-	else if (color[0] === 226 && color[1] ===  31 && color[2] ===  86) frame.src = "/text/HaSi.html";
-	else if (color[0] === 204 && color[1] ===  50 && color[2] === 100) frame.src = "/text/HaMe.html";
-	else if (color[0] === 235 && color[1] === 165 && color[2] === 255) frame.src = "/text/HaFu.html";
-	else if (color[0] === 168 && color[1] ===  45 && color[2] === 210) frame.src = "/text/HaRyu.html";
+		 if (color[0] === 218 && color[1] ===  91 && color[2] ===  96) replaceIFrame("/text/HaYi.html");
+	else if (color[0] === 197 && color[1] ===  98 && color[2] === 162) replaceIFrame("/text/HaMnq.html");
+	else if (color[0] === 226 && color[1] ===  31 && color[2] ===  86) replaceIFrame("/text/HaSi.html");
+	else if (color[0] === 204 && color[1] ===  50 && color[2] === 100) replaceIFrame("/text/HaMe.html");
+	else if (color[0] === 235 && color[1] === 165 && color[2] === 255) replaceIFrame("/text/HaFu.html");
+	else if (color[0] === 168 && color[1] ===  45 && color[2] === 210) replaceIFrame("/text/HaRyu.html");
 
 					//Desert
-	else if (color[0] === 190 && color[1] === 128 && color[2] ===  74) frame.src = "/text/HaRim.html";
-	else if (color[0] === 192 && color[1] === 128 && color[2] ===  93) frame.src = "/text/Krin.html";
-	else if (color[0] === 201 && color[1] === 169 && color[2] ===  99) frame.src = "/text/Adzir.html";
-	else if (color[0] === 213 && color[1] === 217 && color[2] ===  68) frame.src = "/text/Edin.html";
-	else if (color[0] === 190 && color[1] === 179 && color[2] ===  67) frame.src = "/text/Dzuri.html";
-	else if (color[0] === 202 && color[1] === 238 && color[2] === 103) frame.src = "/text/Alhim.html";
-	else if (color[0] === 213 && color[1] === 233 && color[2] ===  93) frame.src = "/text/Agui.html";
+	else if (color[0] === 190 && color[1] === 128 && color[2] ===  74) replaceIFrame("/text/HaRim.html");
+	else if (color[0] === 192 && color[1] === 128 && color[2] ===  93) replaceIFrame("/text/Krin.html");
+	else if (color[0] === 201 && color[1] === 169 && color[2] ===  99) replaceIFrame("/text/Adzir.html");
+	else if (color[0] === 213 && color[1] === 217 && color[2] ===  68) replaceIFrame("/text/Edin.html");
+	else if (color[0] === 190 && color[1] === 179 && color[2] ===  67) replaceIFrame("/text/Dzuri.html");
+	else if (color[0] === 202 && color[1] === 238 && color[2] === 103) replaceIFrame("/text/Alhim.html");
+	else if (color[0] === 213 && color[1] === 233 && color[2] ===  93) replaceIFrame("/text/Agui.html");
 
 					//Colonies
-	else if (color[0] === 142 && color[1] === 138 && color[2] === 100) frame.src = "/text/Urda.html";
-	else if (color[0] === 196 && color[1] === 200 && color[2] === 166) frame.src = "/text/Aret.html";
-	else if (color[0] === 107 && color[1] ===  48 && color[2] === 159) frame.src = "/text/HaGo.html";
+	else if (color[0] === 142 && color[1] === 138 && color[2] === 100) replaceIFrame("/text/Urda.html");
+	else if (color[0] === 196 && color[1] === 200 && color[2] === 166) replaceIFrame("/text/Aret.html");
+	else if (color[0] === 107 && color[1] ===  48 && color[2] === 159) replaceIFrame("/text/HaGo.html");
 
 					//South
-	else if (color[0] === 127 && color[1] === 194 && color[2] ===  68) frame.src = "/text/Toua.html";
-	else if (color[0] ===  52 && color[1] ===  87 && color[2] ===  21) frame.src = "/text/Kuki.html";
-	else if (color[0] ===  42 && color[1] === 194 && color[2] === 195) frame.src = "/text/FaRa.html";
+	else if (color[0] === 127 && color[1] === 194 && color[2] ===  68) replaceIFrame("/text/Toua.html");
+	else if (color[0] ===  52 && color[1] ===  87 && color[2] ===  21) replaceIFrame("/text/Kuki.html");
+	else if (color[0] ===  42 && color[1] === 194 && color[2] === 195) replaceIFrame("/text/FaRa.html");
 
 
-	else 	   														   frame.src = "/text/base.html";
+	else 	   														   replaceIFrame("/text/base.html");
 }
 
 
