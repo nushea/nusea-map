@@ -80,6 +80,10 @@ iframe {
 }
 #Right>ul {
 	justify-content: space-between;
+	width: 100%;
+	text-align: center;
+	margin-top: 2vh;
+	margin-bottom: 2vh;
 }
 
 #Upper {
