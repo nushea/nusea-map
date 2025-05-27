@@ -124,7 +124,7 @@ iframe {
 	display: flex;
 	flex-direction: row;
 }
-}
+
 @media (orientation: portrait) {
     #Items {
         flex-direction: column;
