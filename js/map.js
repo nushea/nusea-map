@@ -1,3 +1,6 @@
+document.getElementById("Upper").innerHTML = "<p>Map of Nusea </p><canvas id=\"metaMap\"></canvas>";
+
+
 const canvas = document.getElementById("metaMap");
 const ctx = canvas.getContext("2d");
 const img = new Image();
@@ -87,3 +90,5 @@ canvas.onclick = function(event) {
 		fillall(color, [(color[0])/6, (color[1])/6, (color[2])/6, 255]);
 	replaceText(color);
 }
+
+replaceIFrame("/text/base.html");

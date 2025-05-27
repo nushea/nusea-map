@@ -109,8 +109,22 @@ iframe {
 	height: 50vh;
 	width: unset;
 }
-
-
+#RegionTable {
+	display: flex;
+	flex-direction: column;
+	margin-top: 10vh;
+	font-size: 1.5vw;
+}
+.NSitem {
+	border: 1px solid #000;
+	width: 7.5vw;
+}
+.GroupItem {
+	margin: 0px;
+	display: flex;
+	flex-direction: row;
+}
+}
 @media (orientation: portrait) {
     #Items {
         flex-direction: column;
@@ -123,7 +137,7 @@ iframe {
     }
 
     #Left>ul {
-        flex-direction: row-reverse;
+        flex-direction: row;
     }
 	.LeftText {
 		display: none;
