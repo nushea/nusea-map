@@ -125,7 +125,7 @@ iframe {
 	flex-direction: row;
 }
 
-@media (orientation: portrait) {
+@media (max-aspect-ratio: 1) {
     #Items {
         flex-direction: column;
 		height: 100dvh;
