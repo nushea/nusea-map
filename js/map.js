@@ -45,7 +45,8 @@ function replaceIFrame(newSrc){
 	frame = newIframe;
 }
 
-function replaceText(color){	
+function replaceText(color){
+	console.log(color);
 					//HaRe
 		 if (color[0] === 218 && color[1] ===  91 && color[2] ===  96) replaceIFrame("/text/HaYi.html");
 	else if (color[0] === 197 && color[1] ===  98 && color[2] === 162) replaceIFrame("/text/HaMnq.html");
@@ -54,8 +55,15 @@ function replaceText(color){
 	else if (color[0] === 235 && color[1] === 165 && color[2] === 255) replaceIFrame("/text/HaFu.html");
 	else if (color[0] === 168 && color[1] ===  45 && color[2] === 210) replaceIFrame("/text/HaRyu.html");
 
+	else if (color[0] === 218 && color[1] ===  92 && color[2] ===  98) replaceIFrame("/text/HaYi.html");
+	else if (color[0] === 198 && color[1] ===  99 && color[2] === 163) replaceIFrame("/text/HaMnq.html");
+	else if (color[0] === 226 && color[1] ===  33 && color[2] ===  88) replaceIFrame("/text/HaSi.html");
+	else if (color[0] === 205 && color[1] ===  52 && color[2] === 102) replaceIFrame("/text/HaMe.html");
+	else if (color[0] === 235 && color[1] === 166 && color[2] === 255) replaceIFrame("/text/HaFu.html");
+	else if (color[0] === 169 && color[1] ===  47 && color[2] === 211) replaceIFrame("/text/HaRyu.html");
+
 					//Desert
-	else if (color[0] === 190 && color[1] === 128 && color[2] ===  74) replaceIFrame("/text/HaRim.html");
+	else if (color[0] === 191 && color[1] === 129 && color[2] ===  76) replaceIFrame("/text/HaRim.html");
 	else if (color[0] === 192 && color[1] === 128 && color[2] ===  93) replaceIFrame("/text/Krin.html");
 	else if (color[0] === 201 && color[1] === 169 && color[2] ===  99) replaceIFrame("/text/Adzir.html");
 	else if (color[0] === 213 && color[1] === 217 && color[2] ===  68) replaceIFrame("/text/Edin.html");
