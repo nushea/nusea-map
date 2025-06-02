@@ -5,3 +5,12 @@
 #Lower {
 	position: unset;
 }
+@media (max-aspect-ratio: 1) {
+	#metaMap {
+		height: unset;
+		width: 80vw;
+	}
+	li>iframe {
+		width: 90%
+	}
+}
