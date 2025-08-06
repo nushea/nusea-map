@@ -5,6 +5,9 @@
 #Lower {
 	position: unset;
 }
+#textItems {
+        background-color: #1e1e2e;
+}
 @media (max-aspect-ratio: 1) {
 	#metaMap {
 		height: unset;
